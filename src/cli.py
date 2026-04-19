@@ -216,6 +216,7 @@ def main() -> None:
         gene_plot_highlight=highlight,
         gene_plot_min_threshold=args.gene_plot_min_threshold,
         add_all_rna_plot=args.add_all_rna_plot,
+        gene_map_path=args.gene_map_path,
     )
 
     print("\nMitoCAPE analysis complete")
