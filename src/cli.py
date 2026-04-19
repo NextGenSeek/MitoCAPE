@@ -133,6 +133,11 @@ def parse_args() -> argparse.Namespace:
         default="_gnomAD.csv",
         help="Suffix for gnomAD-enriched output file.",
     )
+    parser.add_argument(
+        "--gene-map-path",
+        default=None,
+        help="Optional explicit gene map CSV path.",
+    )
 
     return parser.parse_args()
 
