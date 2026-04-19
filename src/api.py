@@ -42,7 +42,7 @@ def run_analysis(
     species: str = "human",
     value_threshold: float = 0,
     fasta_path: Optional[PathLike] = None,
-    reference_dir: Optional[PathLike] = None,
+    gene_map_path: Optional[PathLike] = None,
     make_plots: bool = True,
     plot_types: Optional[Sequence[str]] = None,
     percentage_ranges: Optional[List[Dict[str, object]]] = None,
@@ -69,8 +69,8 @@ def run_analysis(
         Minimum threshold used in effect classification and selected plots.
     fasta_path
         Optional explicit FASTA path. If omitted, bundled/default FASTA is used.
-    reference_dir
-        Optional directory containing bundled reference FASTA files.
+    gene_map_path
+        Optional explicit gene map CSV path. If omitted, bundled/default gene map is used.
     make_plots
         Whether to generate plots.
     plot_types
@@ -126,6 +126,9 @@ def run_analysis(
         "plots": [],
         "summary": None,
         "range_summary": None,
+        "species": species,
+        "fasta_used": str(ref.fasta_path),
+        "gene_map_used": str(ref.gene_map_path),
     }
 
     summary = calculate_effect_counts_and_percentages(processed_file)
