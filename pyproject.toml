@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mitocape"
+version = "0.1.0"
+description = "MitoCAPE: A Python toolkit for mitochondrial variant annotation and visualisation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Lindsey Van Haute" }
+]
+
+keywords = [
+  "bioinformatics",
+  "mitochondria",
+  "mtDNA",
+  "genomics",
+  "variant-analysis",
+  "python"
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent"
+]
+
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+  "seaborn>=0.12",
+  "biopython>=1.81",
+  "logomaker>=0.8"
+]
+
+[project.urls]
+Homepage = "https://github.com/NextGenSeek/MitoCAPE"
+Repository = "https://github.com/NextGenSeek/MitoCAPE"
+Issues = "https://github.com/NextGenSeek/MitoCAPE/issues"
+
+[project.scripts]
+mitocape = "mitocape.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mitocape = [
+  "data/references/*.fasta",
+  "data/references/*.fa",
+  "data/references/*.csv"
+]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
