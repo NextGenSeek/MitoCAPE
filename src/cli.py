@@ -138,6 +138,11 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Optional explicit gene map CSV path.",
     )
+    parser.add_argument(
+        "--gene-map-path",
+        default=None,
+        help="Optional custom gene map CSV file.",
+    )
 
     return parser.parse_args()
 
