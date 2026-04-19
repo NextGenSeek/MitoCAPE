@@ -102,12 +102,13 @@ def run_analysis(
     ref = get_reference_data(
         species=species,
         fasta_path=fasta_path,
-        reference_dir=reference_dir,
+        gene_map_path=gene_map_path,
     )
+
     reference_df = build_reference_dataframe(
         species=species,
         fasta_path=fasta_path,
-        reference_dir=reference_dir,
+        gene_map_path=gene_map_path,
     )
 
     processed_file = process_file(
