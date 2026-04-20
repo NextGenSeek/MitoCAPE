@@ -107,3 +107,9 @@ Focus on Stronger Editing Events
 --value-threshold 5
 ```
 Only edits ≥5% are used in selected plots.
+__
+Recommended Starter Command
+```bash
+mitocape --input sample.csv --outdir results --species human --plot-types standard bubble top_positions
+```
+This gives the most informative first overview.
