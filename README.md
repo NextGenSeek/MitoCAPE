@@ -117,7 +117,7 @@ MitoCAPE can generate:
 ## Example Figures
 
 <p align="center">
-  <img src="examples/images/mouse_example_figure.png" width="35%">
+  <img src="examples/images/mouse_example_figure.png" width="40%">
   <img src="examples/images/example_sequence_logo.png" width="42.5%">
 </p>
 
