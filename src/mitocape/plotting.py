@@ -110,6 +110,7 @@ def create_standard_plot(file_name: PathLike, directory: PathLike, value_thresho
         y=top_changes.values,
         palette="viridis",
         edgecolor="black",
+        legend=False,
         ax=ax,
     )
 
