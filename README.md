@@ -121,6 +121,9 @@ MitoCAPE can generate:
   <img src="examples/images/example_sequence_logo.png" width="42.5%">
 </p>
 
+## Documentation 
+Full documentation is available in the [docs](docs/) folder.
+
 ## Citation
 If you use MitoCAPE in research, please cite:
 ```
