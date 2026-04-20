@@ -43,12 +43,6 @@ def parse_args() -> argparse.Namespace:
         help="Optional explicit FASTA file path. If omitted, the default bundled FASTA is used.",
     )
     parser.add_argument(
-        "--reference-dir",
-        default=None,
-        help="Optional directory containing reference FASTA files.",
-    )
-
-    parser.add_argument(
         "--no-plots",
         action="store_true",
         help="Skip plot generation.",
@@ -200,7 +194,6 @@ def main() -> None:
         species=args.species,
         value_threshold=args.value_threshold,
         fasta_path=args.fasta_path,
-        reference_dir=args.reference_dir,
         make_plots=not args.no_plots,
         plot_types=args.plot_types,
         percentage_ranges=percentage_ranges,
