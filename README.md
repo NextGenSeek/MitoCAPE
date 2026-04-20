@@ -8,6 +8,13 @@ Developed for mitochondrial genome editing, sequencing analysis, and functional 
 
 ---
 
+<p align="center">
+  <img src="examples/images/fly_example_amino_acid_changes_bubble_plot.png" width="40%">
+  <img src="examples/images/mouse_example_percentage_barchart_top20_Mutations.png" width="42.5%">
+</p>
+
+---
+
 ## Features
 
 - Analyse mitochondrial editing / mutation datasets from CSV input files  
@@ -107,10 +114,12 @@ MitoCAPE can generate:
 - Gene-specific editing plots
 - Codon effect visualisations
 
-## Example Figure
-<p align="center"> <img src="images/.png" width="75%"> </p>
+## Example Figures
 
----
+<p align="center">
+  <img src="examples/images/mouse_example_figure.png" width="35%">
+  <img src="examples/images/example_sequence_logo.png" width="42.5%">
+</p>
 
 ## Citation
 If you use MitoCAPE in research, please cite:
